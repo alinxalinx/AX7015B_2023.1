@@ -1,0 +1,45 @@
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+set_property CFGBVS VCCO [current_design]
+set_property CONFIG_VOLTAGE 3.3 [current_design]
+
+set_property PACKAGE_PIN M2 [get_ports {ad7606_os[0]}]
+set_property PACKAGE_PIN M1 [get_ports {ad7606_os[1]}]
+set_property PACKAGE_PIN Y12 [get_ports {ad7606_os[2]}]
+set_property PACKAGE_PIN Y13 [get_ports ad7606_convstab]
+set_property PACKAGE_PIN P3 [get_ports ad7606_reset]
+set_property PACKAGE_PIN P2 [get_ports ad7606_rd]
+set_property PACKAGE_PIN P7 [get_ports ad7606_cs]
+set_property PACKAGE_PIN R7 [get_ports ad7606_busy]
+set_property PACKAGE_PIN N8 [get_ports ad7606_first_data]
+set_property PACKAGE_PIN R4 [get_ports {ad7606_data[0]}]
+set_property PACKAGE_PIN R5 [get_ports {ad7606_data[1]}]
+set_property PACKAGE_PIN M7 [get_ports {ad7606_data[2]}]
+set_property PACKAGE_PIN M8 [get_ports {ad7606_data[3]}]
+set_property PACKAGE_PIN M3 [get_ports {ad7606_data[4]}]
+set_property PACKAGE_PIN M4 [get_ports {ad7606_data[5]}]
+set_property PACKAGE_PIN U14 [get_ports {ad7606_data[6]}]
+set_property PACKAGE_PIN U13 [get_ports {ad7606_data[7]}]
+set_property PACKAGE_PIN AB14 [get_ports {ad7606_data[8]}]
+set_property PACKAGE_PIN AB13 [get_ports {ad7606_data[9]}]
+set_property PACKAGE_PIN W15 [get_ports {ad7606_data[10]}]
+set_property PACKAGE_PIN V15 [get_ports {ad7606_data[11]}]
+set_property PACKAGE_PIN Y17 [get_ports {ad7606_data[12]}]
+set_property PACKAGE_PIN W17 [get_ports {ad7606_data[13]}]
+set_property PACKAGE_PIN W18 [get_ports {ad7606_data[14]}]
+set_property PACKAGE_PIN V18 [get_ports {ad7606_data[15]}]
+
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports ad7606_convstab]
+set_property IOSTANDARD LVCMOS33 [get_ports ad7606_reset]
+set_property IOSTANDARD LVCMOS33 [get_ports ad7606_rd]
+set_property IOSTANDARD LVCMOS33 [get_ports ad7606_cs]
+set_property IOSTANDARD LVCMOS33 [get_ports ad7606_busy]
+set_property IOSTANDARD LVCMOS33 [get_ports ad7606_first_data]
+set_property IOSTANDARD LVCMOS33 [get_ports {ad7606_os[*]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {ad7606_data[*]}]
+
+
+set_false_path -reset_path -from [get_pins {design_1_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/slv_reg1_reg[*]/C}] -to [get_pins {design_1_i/ad7606_sample_0/inst/ad7606_sample_v1_0_S00_AXI_inst/sample_inst/dma_len_d0_reg[*]/D}]
+
+
