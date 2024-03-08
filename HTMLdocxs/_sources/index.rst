@@ -17,6 +17,12 @@ ZYNQ 7000 开发平台
    7015B_S1_RSTdocument_CN/00_文档版本履历_CN
 
 .. toctree::
+   :maxdepth: 3
+   :caption: 用户手册
+
+   AX7015B_UserManual_CN/AX7015B_UserManual
+
+.. toctree::
    :maxdepth: 2
    :caption: AX7015B型号板卡S1_FPGA教程
 
